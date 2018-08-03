@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eeeeee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 0;
+    color: #ffffff
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0 40px rgba(0,0,0,0.1),
+    -30px 0px 40px rgba(0,0,0,0.1);
+}
+
+#images {
+    background: url("https://i.imgur.com/MJAkxbh.png")
+}
+
+#landing {
+    background: #ffffff;
+}
+
+#landing-image {
+    background: url("../images/landing-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw; /*vw = viewport width*/
+    height: 50vh; /*vh = viewport height*/
+    justify-content: center; /*align horizantially*/
+    align-items: center; /*align vertically*/
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: #9DBDC6
+}
+
+#header {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: #BF112E;
+    color: #02173E;
+}
+
+#header h2 {
+    border-left: solid 1px #000000;
+    border-right: solid 1px #000000;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: .8rem;
+}
+
+.menu-bar1, .menu-bar2, .menu-bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #F5941C;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .menu-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .menu-bar2 {opacity: 0;}
+
+.change .menu-bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hover-text {
+    font-size: 1.3rem
+}
+
+.hover-text h3 {
+    font-size: 1.6rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: 1px #cccccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #02173E;
+    transition: all 500ms ease;
+}
+
+.btn:hover {
+    background: #BF112E;
+    color: #cccccc;
+}
+
+.caption {
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+.big-icon {
+    padding: 1.2rem;
+    font-size: 3.5rem;
+}
+
+#sideNavButton {
+    cursor: pointer;
+    font-size: 2rem;
+    top: 0%;
+    right: 50%;
+    transition: 0.3s;
+    position: fixed;
+}
+
+#sideNavButton:hover {
+    color: #818181;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; 
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; 
+    z-index: 1; 
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #F5941C; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 1rem; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media(min-width: 500px) {
+    img {
+        width: 50%;
+        margin: auto;
+        box-shadow: 30px 0 40px rgba(0,0,0,0.1),
+        -30px 0px 40px rgba(0,0,0,0.1);
+    }
+
+    img:hover {
+        box-shadow: 30px 0 40px rgba(0,0,0,0.2),
+        -30px 0px 40px rgba(0,0,0,0.2);
+    }
+
+     main {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .caption {
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    .wrapper:hover .caption {
+        opacity: 1;
+    }
+
+    .sidenav {
+        padding-top: 5rem;
+    }
+
+    .sidenav a {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: .5rem 2rem;
+    }
+}
