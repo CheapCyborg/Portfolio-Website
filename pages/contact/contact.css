@@ -11,6 +11,7 @@ h1 {
     font-weight: 400;
     font-size: 2.5rem;
     margin: 0;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -18,11 +19,6 @@ h2 {
     font-size: 1.2rem;
     text-transform: capitalize;
     margin: 0;
-}
-
-img {
-    display: block;
-    width: 100%;
 }
 
 a {
@@ -39,84 +35,16 @@ a {
     display: flex;
     flex: 0 1 40vw; /*vw = viewport width*/
     height: 50vh; /*vh = viewport height*/
-    justify-content: center; /*align horizantially*/
-    align-items: center; /*align vertically*/
+    justify-content: top; /*align horizantially*/
+    align-items: top; /*align vertically*/
     text-align: center;
     padding-right: 1rem;
     padding-left: 1rem;
-}
-
-#landing-text a {
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: #000000;
-    
-}
-
-#landing-text i {
-    font-size: 2rem;
-    color: #F16541;
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
 #landing-text h2 {
     color: #BF112E
-}
-
-#landing-image {
-    background: url("../../images/Me.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
-    flex: 0 1 40vw;
-    margin: 0;
-}
-
-.btn {
-    padding: 1rem 2rem;
-    border: 1px #cccccc solid;
-    display: inline-block;
-    margin: 2rem 0 0;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #02173E;
-    transition: all 500ms ease;
-}
-
-.btn:hover {
-    background: #BF112E;
-    color: #cccccc;
-}
-
-.card {
-    height: 50vh;
-    flex: 0 1 40vw;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-
-.card.is-flipped {
-  transform: rotateY(180deg);
-}
-
-.card-face {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    line-height: 3.4rem;
-    text-align: center;
-    backface-visibility: hidden;
-}
-
-.card-front {
-    background: red;
-}
-
-.card-back {
-    transform: rotateY(180deg);
-    font-size: 2rem;
-    bottom: 50%;
 }
 
 .menu-bar1, .menu-bar2, .menu-bar3 {
@@ -218,10 +146,7 @@ a {
         height: 100vh;
     }
 
-    #landing-image {
-        height: 100vh;
-    }
-     .sidenav {
+    .sidenav {
         padding-top: 5rem;
     }
 

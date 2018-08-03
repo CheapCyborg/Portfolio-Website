@@ -133,6 +133,27 @@ main {
     text-align: center;
 }
 
+.social-links {
+    position: absolute;
+    bottom: 10%;
+    padding: 0;
+    display: flex;
+    font-size: 0%;
+}
+
+.social-icon {
+    position: absolute;
+    font-size: 2rem;
+    color: #f1f1f1;
+    opacity: .6;
+    transition: 300ms;
+}
+
+.social-icon:hover {
+    opacity: 1;
+    font-size: 2.5rem;
+}
+
 .big-icon {
     padding: 1.2rem;
     font-size: 3.5rem;
