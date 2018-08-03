@@ -186,6 +186,17 @@ a {
     #landing-image {
         height: 100vh;
     }
+     .sidenav {
+        padding-top: 5rem;
+    }
+
+    .sidenav a {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: .5rem 2rem;
+    }
 }
 
 /* Screen Sizes 700px and Up */
