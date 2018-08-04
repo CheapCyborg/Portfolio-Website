@@ -45,6 +45,14 @@ a {
     color: #BF112E
 }
 
+.contact-text {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
 .menu-bar1, .menu-bar2, .menu-bar3 {
     width: 35px;
     height: 5px;
@@ -131,6 +139,17 @@ a {
 .big-icon:hover {
     opacity: 1;
     font-size: 2.5rem;
+}
+
+.special-icon {
+    position: absolute;
+    margin: 5rem;
+    font-size: 3rem;
+    transition: 300ms;
+}
+
+.special-icon:hover {
+    font-size: 3.5rem;
 }
 
 /* Screen Sizes 500px and Up */

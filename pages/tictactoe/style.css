@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eeeeee;
+    height: auto;
+}
+
+th, td {
+    padding: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background: #eeeeee;
+    border-left: 1px solid black;
+}
+
+img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.container {
+    position: relative;
+    
+}
+
+.game-board {
+     margin: 0 auto;
+     width: 20rem; 
+}
+
+.no-border {
+  border-left: none;
+}
+
+.no-bottom {
+    border-bottom: none;
+}
+
+.menu-bar1, .menu-bar2, .menu-bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #F5941C;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .menu-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .menu-bar2 {opacity: 0;}
+
+.change .menu-bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#sideNavButton {
+    cursor: pointer;
+    font-size: 2rem;
+    top: 0%;
+    right: 50%;
+    transition: 0.3s;
+    position: fixed;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; 
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; 
+    z-index: 1; 
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #F5941C; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 1rem; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.social-links {
+    position: absolute;
+    bottom: 10%;
+    padding: 0;
+    display: flex;
+    font-size: 0%;
+}

@@ -157,6 +157,12 @@ main {
 .big-icon {
     padding: 1.2rem;
     font-size: 3.5rem;
+    color: #F16541;
+    transition: 200ms;
+}
+
+.big-icon:hover {
+    font-size: 3.7rem;
 }
 
 #sideNavButton {

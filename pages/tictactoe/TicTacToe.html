@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		Tic-Tac-Toe
+	</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="../../js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+</head>
+<script>
+	var turn = 0;
+	var space1, space2, space3, space4, space5, space6, space7, space8, space9;
+	var playerOne = prompt("Player One Enter Your Name");
+	var playerTwo = prompt("Player Two Enter Your Name")
+	$(document).ready(function() {
+		$('#cellOne').click(function() { //box 1
+			if (turn == 0) {
+				$('#cellOne').html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moon_Letter_O.svg/120px-Moon_Letter_O.svg.png'/>");
+				$('#cellOne').val(0);
+				space1 = $("#cellOne").val();
+				calculateWinner();
+				checkForWinner();
+				turn++;
+				}
+			else {
+				$('#cellOne').html("<img src='https://vignette.wikia.nocookie.net/grimm/images/a/a5/X.png/revision/latest?cb=20161103004859'/>");
+				$('#cellOne').val(1);
+				space1 = $("#cellOne").val();
+				calculateWinner();
+				checkForWinner();
+				turn--;
+			}
+		});
+		$('#cellTwo').click(function() { //box 2
+			if (turn == 0) {
+				$('#cellTwo').html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moon_Letter_O.svg/120px-Moon_Letter_O.svg.png'/>");
+				$('#cellTwo').val(0);
+				space2 = $("#cellTwo").val();
+				calculateWinner();
+				checkForWinner();
+				turn++;
+				}
+			else {
+				$('#cellTwo').html("<img src='https://vignette.wikia.nocookie.net/grimm/images/a/a5/X.png/revision/latest?cb=20161103004859'/>");
+				$('#cellTwo').val(1);
+				space2 = $("#cellTwo").val();
+				calculateWinner();
+				checkForWinner();
+				turn--;
+			}
+		});
+		$('#cellThree').click(function() { //box 3
+			if (turn == 0) {
+				$('#cellThree').html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moon_Letter_O.svg/120px-Moon_Letter_O.svg.png'/>");
+				$('#cellThree').val(0);
+				space3 = $("#cellThree").val();
+				calculateWinner();
+				checkForWinner();
+				turn++;
+				}
+			else {
+				$('#cellThree').html("<img src='https://vignette.wikia.nocookie.net/grimm/images/a/a5/X.png/revision/latest?cb=20161103004859'/>");
+				$('#cellThree').val(1);
+				space3 = $("#cellThree").val();
+				calculateWinner();
+				checkForWinner();
+				turn--;
+			}
+		});
+		$('#cellFour').click(function() { //box 4
+			if (turn == 0) {
+				$('#cellFour').html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moon_Letter_O.svg/120px-Moon_Letter_O.svg.png'/>");
+				$('#cellFour').val(0);
+				space4 = $("#cellFour").val();
+				calculateWinner();
+				checkForWinner();
+				turn++;
+				}
+			else {
+				$('#cellFour').html("<img src='https://vignette.wikia.nocookie.net/grimm/images/a/a5/X.png/revision/latest?cb=20161103004859'/>");
+				$('#cellFour').val(1);
+				space4 = $("#cellFour").val();
+				calculateWinner();
+				checkForWinner();
+				turn--;
+			}
+		});
+		$('#cellFive').click(function() { //box 5
+			if (turn == 0) {
+				$('#cellFive').html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moon_Letter_O.svg/120px-Moon_Letter_O.svg.png'/>");
+				$('#cellFive').val(0);
+				space5 = $("#cellFive").val();
+				calculateWinner();
+				checkForWinner();
+				turn++;
+				}
+			else {
+				$('#cellFive').html("<img src='https://vignette.wikia.nocookie.net/grimm/images/a/a5/X.png/revision/latest?cb=20161103004859'/>");
+				$('#cellFive').val(1);
+				space5 = $("#cellFive").val();
+				calculateWinner();
+				checkForWinner();
+				turn--;
+			}
+		});
+		$('#cellSix').click(function() { //box 6
+			if (turn == 0) {
+				$('#cellSix').html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moon_Letter_O.svg/120px-Moon_Letter_O.svg.png'/>");
+				$('#cellSix').val(0);
+				space6 = $("#cellSix").val();
+				calculateWinner();
+				checkForWinner();
+				turn++;
+				}
+			else {
+				$('#cellSix').html("<img src='https://vignette.wikia.nocookie.net/grimm/images/a/a5/X.png/revision/latest?cb=20161103004859'/>");
+				$('#cellSix').val(1);
+				space6 = $("#cellSix").val();
+				calculateWinner();
+				checkForWinner();
+				turn--;
+			}
+		});
+		$('#cellSeven').click(function() { //box 7
+			if (turn == 0) {
+				$('#cellSeven').html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moon_Letter_O.svg/120px-Moon_Letter_O.svg.png'/>");
+				$('#cellSeven').val(0);
+				space7 = $("#cellSeven").val();
+				calculateWinner();
+				checkForWinner();
+				turn++;
+				}
+			else {
+				$('#cellSeven').html("<img src='https://vignette.wikia.nocookie.net/grimm/images/a/a5/X.png/revision/latest?cb=20161103004859'/>");
+				$('#cellSeven').val(1);
+				space7 = $("#cellSeven").val();
+				calculateWinner();
+				checkForWinner();
+				turn--;
+			}
+		});
+		$('#cellEight').click(function() { //box 8
+			if (turn == 0) {
+				$('#cellEight').html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moon_Letter_O.svg/120px-Moon_Letter_O.svg.png'/>");
+				$('#cellEight').val(0);
+				space8 = $("#cellEight").val();
+				calculateWinner();
+				checkForWinner();
+				turn++;
+				}
+			else {
+				$('#cellEight').html("<img src='https://vignette.wikia.nocookie.net/grimm/images/a/a5/X.png/revision/latest?cb=20161103004859'/>");
+				$('#cellEight').val(1);
+				space8 = $("#cellEight").val();
+				calculateWinner();
+				checkForWinner();
+				turn--;
+			}
+		});
+		$('#cellNine').click(function() { //box 9
+			if (turn == 0) {
+				$('#cellNine').html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Moon_Letter_O.svg/120px-Moon_Letter_O.svg.png'/>");
+				$('#cellNine').val(0);
+				space9 = $("#cellNine").val();
+				calculateWinner();
+				checkForWinner();
+				turn++;
+				}
+			else {
+				$('#cellNine').html("<img src='https://vignette.wikia.nocookie.net/grimm/images/a/a5/X.png/revision/latest?cb=20161103004859'/>");
+				$('#cellNine').val(1);
+				space9 = $("#cellNine").val();
+				calculateWinner();
+				checkForWinner();
+				turn--;
+			}
+		});
+		//Chnage color on hover
+		$('td').hover(function () {
+			$(this).css("background-color", "aqua");
+		}, function(){
+			$(this).css("background-color", "#eeeeee");
+			});
+});
+	function checkForWinner() {
+		console.log(calculateWinner())
+		if(calculateWinner() == 0){
+			alert(playerOne + " Wins!")
+		}
+		else if (calculateWinner() == 1) {
+			alert(playerTwo +" Wins!")
+		}
+	}
+	function calculateWinner() {
+		// check rows
+		if ((space1 == space2) && (space2 == space3)) {
+			return space3;
+		}
+		else if ((space4 == space5) && (space5 == space6)) {
+			return space6;
+		}
+		else if ((space7 == space8) && (space8 == space9)) {
+			return space9;
+		}
+		// check columns
+		else if ((space1 == space4) && (space4 == space7)) {
+			return space7;
+		}
+		else if ((space2 == space5) && (space5 == space8)) {
+			return space8;
+		}
+		else if ((space3 == space6) && (space6 == space9)) {
+			return space9;
+		}
+		// check diagonals
+		else if ((space1 == space5) && (space5 == space9)) {
+			return space9;
+		}
+		else if ((space3 == space5) && (space5 == space7)) {
+			return space7;
+		}
+		// no winner
+		return -1;
+	}
+</script>
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../../index.html">Home</a>
+		<a href="../about/about.html">About</a>
+		<a href="../../index.html#images">Portfolio</a>
+		<a href="#">Clients</a>
+		<a href="../contact/contact.html">Contact</a>
+		<div class="social-links">
+			<a href="https://github.com/CheapCyborg" target="_blank">
+				<i class="fab fa-github-square social-icon"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/damian-green-834556145/" target="_blank">
+				<i class="fab fa-linkedin social-icon"></i>
+			</a>
+			<a href="mailto:damiang58@gmail.com">
+				<i class="fas fa-envelope-square social-icon"></i>
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="game-board">
+			<table>
+				<thead>
+					<th class="no-border" colspan="3">Tic-Tac-Toe</th>
+				</thead>
+			<tbody>
+				<tr>
+					<td class="no-border" id="cellOne">
+					</td>
+					<td id="cellTwo">
+					</td>
+					<td id="cellThree">
+					</td>
+				</tr>
+				<tr>
+					<td class="no-border" id="cellFour">
+					</td>
+					<td id ="cellFive">
+					</td>
+					<td id="cellSix">
+					</td>
+				</tr>
+				<tr>
+					<td class="no-border no-bottom" id="cellSeven">
+					</td>
+					<td class="no-bottom" id="cellEight">
+					</td>
+					<td class="no-bottom" id="cellNine">
+					</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<div onclick="changeMenu(this)">
+			<span id="sideNavButton" onclick="openNav()">
+				<div class="menu-bar1"></div>
+				<div class="menu-bar2"></div>
+				<div class="menu-bar3"></div>
+			</span>
+		</div>
+	</div>
+</body>
+</html>
