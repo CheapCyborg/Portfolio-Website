@@ -115,8 +115,8 @@ a {
 
 .card-back {
     transform: rotateY(180deg);
-    font-size: 2rem;
-    bottom: 50%;
+    font-size: 1rem;
+    bottom: 105%;
 }
 
 .menu-bar1, .menu-bar2, .menu-bar3 {
@@ -221,6 +221,7 @@ a {
     #landing-image {
         height: 100vh;
     }
+    
      .sidenav {
         padding-top: 5rem;
     }
@@ -235,5 +236,10 @@ a {
 
     .social-links {
         padding: 2rem;
+    }
+
+    .card-back {
+        font-size: 2rem;
+        bottom: 50%;
     }
 }

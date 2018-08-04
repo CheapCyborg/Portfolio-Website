@@ -38,9 +38,7 @@ a {
     justify-content: top; /*align horizantially*/
     align-items: top; /*align vertically*/
     text-align: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding: 3rem;
 }
 
 #landing-text h2 {
