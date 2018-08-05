@@ -184,6 +184,7 @@ main {
     margin: 0;
     transition: 0.3s;
     position: fixed;
+    z-index: 1;
 }
 
 #sideNavButton:hover {

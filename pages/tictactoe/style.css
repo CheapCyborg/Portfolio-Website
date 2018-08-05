@@ -70,6 +70,7 @@ img {
     right: 49.5%;
     transition: 0.3s;
     position: fixed;
+    z-index: 1;
 }
 
 .sidenav {
