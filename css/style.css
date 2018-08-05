@@ -83,6 +83,14 @@ main {
     padding-left: .8rem;
 }
 
+.bar {
+    width: 10rem;
+    height: 2px;
+    background-color: #F5941C;
+    margin: auto;
+    margin-top: 1%;
+}
+
 .menu-bar1, .menu-bar2, .menu-bar3 {
     width: 35px;
     height: 5px;
@@ -106,7 +114,8 @@ main {
 }
 
 .hover-text {
-    font-size: 1.3rem
+    font-size: 1.2rem;
+    line-height: 1rem;
 }
 
 .hover-text h3 {
