@@ -33,10 +33,10 @@ a {
 
 #landing-text {
     display: flex;
-    flex: 0 1 40vw; /*vw = viewport width*/
-    height: 50vh; /*vh = viewport height*/
-    justify-content: top; /*align horizantially*/
-    align-items: top; /*align vertically*/
+    flex: 0 1 40vw; 
+    height: 50vh; 
+    justify-content: top; 
+    align-items: top; 
     text-align: center;
     padding: 3rem;
 }
@@ -66,7 +66,9 @@ a {
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .menu-bar2 {opacity: 0;}
+.change .menu-bar2 {
+    opacity: 0;
+    }
 
 .change .menu-bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -82,21 +84,19 @@ a {
     position: fixed;
 }
 
-/* The side navigation menu */
 .sidenav {
     height: 100%; 
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 0; 
     position: fixed; 
     z-index: 1; 
-    top: 0; /* Stay at the top */
+    top: 0; 
     left: 0;
     background-color: #F5941C; 
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 1rem; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    padding-top: 1rem; 
+    transition: 0.5s; 
 }
 
-/* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -106,12 +106,10 @@ a {
     transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -152,7 +150,6 @@ a {
     font-size: 3.5rem;
 }
 
-/* Screen Sizes 500px and Up */
 @media(min-width: 500px) { 
     #landing {
         display: flex;
